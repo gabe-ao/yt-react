@@ -6,10 +6,10 @@ import useVideos from "../hooks/useVideos.js";
 
 const App = () => {
 	const [selectedVideo, setSelectedVideo] = useState(null);
-	const [videos, search] = useVideos("voce e burro cara?");
+	const [videos, search] = useVideos("Gwent");
 
 	useEffect(() => {
-		setSelectedVideo(videos[1]);
+		setSelectedVideo(videos[0]);
 	}, [videos]);
 
 	return (
